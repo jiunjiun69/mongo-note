@@ -86,6 +86,21 @@ db.data.insert({"name": "hello", "price": 87})
 db.data.find()
 ```
 
+## 新增管理者User
+參考:https://www.kdzone.net/2017/04/mongodb-3.html
+到CMD 輸入 mongo
+```
+use admin
+
+db.createUser(
+{
+   user: "使用者名稱",
+   pwd: "使用者密碼",
+   roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+   }
+)
+```
+
 ---
 
 ## MongoDB Compass 安裝
