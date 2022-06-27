@@ -1,5 +1,5 @@
 # Windows 安裝&操作 local 端 MongoDB 之筆記
-這是我為大學學弟妹整理 MongoDB 安裝跟簡易操作的筆記，做教學用，有錯誤的話可以通知我更正，感謝
+這是為大學學弟妹整理 MongoDB 安裝跟簡易操作的筆記，做教學用，有錯誤的話可以通知我更正，感謝
 ## 需安裝項目
 [MongoDB Community Server](https://www.mongodb.com/try/download/community) MongoDB伺服器
 
@@ -90,6 +90,7 @@ db.data.find()
 
 ## MongoDB Compass 安裝
 安裝 [MongoDB Compass](https://www.mongodb.com/try/download/compass) 視覺化界面
+!!剛剛沒有取消勾選Install MongoDB Compass的話，就會一併跟MongoDB Community Server一起安裝好了，就不用再特地安裝
 
 1. 點擊![](https://i.imgur.com/Mpcy0Zl.png)下載安裝檔
 2. 安裝好後使用預設的URI(mongodb://localhost:27017)連接，按 ![](https://i.imgur.com/28XduOp.png)
