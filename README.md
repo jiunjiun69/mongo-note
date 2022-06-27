@@ -89,7 +89,10 @@ db.data.find()
 ---
 
 ## MongoDB Compass 安裝
+![](https://i.imgur.com/zejfNDx.png)
+
 安裝 [MongoDB Compass](https://www.mongodb.com/try/download/compass) 視覺化界面
+
 !!剛剛沒有取消勾選Install MongoDB Compass的話，就會一併跟MongoDB Community Server一起安裝好了，就不用再特地安裝
 
 1. 點擊![](https://i.imgur.com/Mpcy0Zl.png)下載安裝檔
