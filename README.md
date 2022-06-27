@@ -99,7 +99,39 @@ db.data.find()
 2. 安裝好後使用預設的URI(mongodb://localhost:27017)連接，按 ![](https://i.imgur.com/28XduOp.png)
 3. 連接成功後，有出現剛剛新增的 Collection 就成功了
 
+---
+## 更改 MongoDB default ip跟port
+可以參考[官方文件](https://www.mongodb.com/docs/manual/reference/configuration-options/)
+1. 管理員身份打開CMD命令提示符，切換到MongoDB安裝目錄的bin資料夾
+2. 在想要的地方創建配置文件mongod.conf，本文範例是在MongoDB安裝目錄的bin資料夾的conf/下創建
+3. 使用--config <配置文件路徑> 運行配置文件
+```
+範例
+mongod --config /conf/mongod.conf
+```
+```
+mongod.conf範例
 
+systemLog:
+   destination: file
+   path: c:\Program Files\MongoDB\Server\5.0\log
+   logAppend: true
+storage:
+   journal:
+      enabled: true
+processManagement:
+   fork: true
+net:
+   bindIp: 自己的IP
+   port: 想要的port號
+setParameter:
+   enableLocalhostAuthBypass: false
+```
+4. 之後設置這些配置
+```
+mongod --config "conf\mongod.cfg" --install
+```
+加上--install才不會卡執行續
 
 
 
