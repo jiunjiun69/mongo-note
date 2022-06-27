@@ -14,8 +14,8 @@ MongoDB預設安裝在C:\Program Files\MongoDB\Server\版本號
 Data 預設在C:\Program Files\MongoDB\Server\版本號\data\
 Log  預設在C:\Program Files\MongoDB\Server\版本號\log\
 ```
-3. 取消勾選 <input type="checkbox" checked="checked"><span> Install MongoDB Compass</span>，先不同時安裝 MongoDB Compass 圖形管理工具，避免無法順利安裝，繼續按<span class="btn">Next</span>
-4. 按<span class="btn">Install</span>
+3. 如果想要使用其他圖形管理工具，可以取消勾選 <input type="checkbox" checked="checked"><span> Install MongoDB Compass</span>，就不會安裝 MongoDB Compass 圖形管理工具，繼續按<span class="btn">Next</span>
+4. 按<span class="btn">Install</span> 
 5. 等待安裝完按<span class="btn">Finish</span>
 
 ## MongoDB 簡易操作
