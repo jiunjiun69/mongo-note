@@ -1,4 +1,4 @@
-# Windows 安裝&操作 local 端 MongoDB 之筆記
+# Windows 安裝&操作 MongoDB 之筆記
 這是為大學學弟妹整理 MongoDB 安裝跟簡易操作的筆記，做教學用，有錯誤的話可以通知我更正，感謝
 ## 需安裝項目
 [MongoDB Community Server](https://www.mongodb.com/try/download/community) MongoDB伺服器
