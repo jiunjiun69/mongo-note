@@ -14,7 +14,7 @@ MongoDB預設安裝在C:\Program Files\MongoDB\Server\版本號
 Data 預設在C:\Program Files\MongoDB\Server\版本號\data\
 Log  預設在C:\Program Files\MongoDB\Server\版本號\log\
 ```
-3. 如果想要使用其他圖形管理工具，可以取消勾選 <input type="checkbox" checked="checked"><span> Install MongoDB Compass</span>，就不會安裝 MongoDB Compass 圖形管理工具，繼續按<span class="btn">Next</span>
+3. 如果想要使用其他圖形管理工具，可以取消勾選:white_check_mark:Install MongoDB Compass，就不會安裝 MongoDB Compass 圖形管理工具，繼續按<span class="btn">Next</span>
 4. 按<span class="btn">Install</span> 
 5. 等待安裝完按<span class="btn">Finish</span>
 
@@ -94,3 +94,12 @@ db.data.find()
 1. 點擊<span class="btn">Download</span>下載安裝檔
 2. 安裝好後使用預設的URI(mongodb://localhost:27017)連接，按 <span class="btn btn-success">Connect</span>
 3. 連接成功後，有出現剛剛新增的 Collection 就成功了
+
+
+
+
+
+
+
+
+:u5272:
