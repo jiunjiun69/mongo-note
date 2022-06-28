@@ -1,5 +1,7 @@
 # Windows 安裝&操作 MongoDB 之筆記
 這是為大學學弟妹整理 MongoDB 安裝跟簡易操作的筆記，做教學用，有錯誤的話可以通知我更正，感謝
+
+ipynb為本地無帳號密碼的pymongo crud測試，有需要請再更改IP、PORT、帳號、密碼 等等
 ## 需安裝項目
 [MongoDB Community Server](https://www.mongodb.com/try/download/community) MongoDB伺服器
 
@@ -20,6 +22,7 @@ Log  預設在C:\Program Files\MongoDB\Server\版本號\log\
 
 ## MongoDB 簡易操作
 1. 打開 cmd(命令提示字元) 切換到 C:\Program Files\MongoDB\Server\版本號\bin (這邊以目前我的版本號5.0為範例)
+這步驟也可以通過設置環境變數的方式，將MongoDB安裝的位置 C:\Program Files\MongoDB\Server\版本號\bin 存到環境變數中，就不需要cd到此目錄下了，可以直接在cmd使用mongo指令
 ```
 cd C:\Program Files\MongoDB\Server\5.0\bin
 ```
@@ -111,12 +114,14 @@ db.createUser(
 !!剛剛沒有取消勾選Install MongoDB Compass的話，就會一併跟MongoDB Community Server一起安裝好了，就不用再特地安裝
 
 1. 點擊![](https://i.imgur.com/Mpcy0Zl.png)下載安裝檔
-2. 安裝好後使用預設的URI(mongodb://localhost:27017)連接，按 ![](https://i.imgur.com/28XduOp.png)
+2. 安裝好後使用預設的URI(mongodb://localhost:27017)連接測試，按 ![](https://i.imgur.com/28XduOp.png)
 3. 連接成功後，有出現剛剛新增的 Collection 就成功了
 
 ---
 ## 更改 MongoDB default ip跟port
-可以參考[官方文件](https://www.mongodb.com/docs/manual/reference/configuration-options/)
+
+如果有個定IP及開通的PORT號，想要架設資料庫server的話，可以參考[官方文件](https://www.mongodb.com/docs/manual/reference/configuration-options/)來更改設置
+
 1. 管理員身份打開CMD命令提示符，切換到MongoDB安裝目錄的bin資料夾
 2. 在想要的地方創建配置文件mongod.conf，本文範例是在MongoDB安裝目錄的bin資料夾的conf/下創建
 3. 使用--config <配置文件路徑> 運行配置文件
